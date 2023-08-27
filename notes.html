@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<style>
+    #image {
+        display : block;
+    }
+    .fun:hover {
+        visibility: visible;
+    }
+    .hide{
+        display:none;
+    }
+    .starimg:hover + .hide{
+         display : block;
+    }
+    #a{
+            width:30px;
+            height:30px;
+            float: right ;
+            object-position: top ;
+        }
+</style>
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Magic Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" id= "searchTxt" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class = "container my-3">
+    <h3>Welcome to Magic Notes</h3>
+    <br>
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> Add a note </h5>
+          <div class="form group">
+          <textarea class="card-title" id="title"></textarea>
+          <textarea class='form-control' id='txt' rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" id="btn">Add note</button>
+        </div>
+      </div>
+      <hr>
+      <h1>Your Notes</h1>
+      <hr>
+      <div id="notes" class = "row container-fluid">
+        
+        <h2 class="hide">
+            <img src = "https://t3.ftcdn.net/jpg/02/12/94/86/360_F_212948692_hmAugxE54yt4XGzqCeImTZjNyYkAX7S4.jpg" width = '50' height="50" id="star">
+        </h2>
+          
+    </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "web.js"></script>
+</html>
